@@ -38,7 +38,7 @@ def save_todos():
             writer = csv.writer(todosfile)
             writer.writerows(todos)
     except Exception as e:
-        print(f"No se ha podido guardar el archivo: {e}")
+        print(f"The document couldn't be saved: {e}")
     pass
 
     
@@ -50,7 +50,7 @@ def load_todos():
             for line in reader:
                 todos.append([line])
     except Exception as e:
-        print(f"No se ha podido importar el archivo: {e}")
+        print(f"The document couldn't be imported: {e}")
     pass
 
 # Below this code will only run if the entry file running was app.py
